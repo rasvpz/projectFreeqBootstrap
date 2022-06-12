@@ -1,0 +1,56 @@
+.banner{
+  margin: 1px !important;
+  margin-top: 8px !important;
+  font-family: 'Fredoka', sans-serif;
+  line-height: 2;
+  border-bottom: 1px solid #e2e8f0;
+}
+.col{
+  font-size: 16px;
+  margin-left: 20px;
+}
+.img-fluid{
+  width: 100% !important;
+}
+.menuSpanMnuBar{
+  border-bottom: 1px solid #e2e8f0 !important;
+  margin-left: 8px !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(70, 69, 69);
+}
+.menuSpanMnuBar .navButton{
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  color: rgb(97, 97, 97);
+  border: none ;
+  font-weight: bold;
+  padding-left: 0px !important;
+  font-family: 'Anybody', cursive;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  padding: 0px ;
+  margin-left: 5px !important;
+  margin-right: 24px !important;
+  min-height: 36px;
+
+}
+
+.menuSpanMnuBar .navButton:hover{
+  margin-left: 5px !important;
+  margin-right: 24px !important;
+  transform: 0.5;
+  transition: 0.2s;
+  color: black;
+}
+.categoryHeading{
+  color: #000000 !important;
+  font-weight: bold;
+
+}
+.subCat{
+  color: rgb(97, 97, 97);
+}

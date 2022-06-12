@@ -1,0 +1,40 @@
+#btnGroupAddon{
+    height: 38px !important;
+    background-color: #edf2f7;
+    font-weight:bolder ;
+    border:  none !important;
+    font-family: 'Anybody', cursive;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+#mrgn{
+    height: 38px !important;
+    background-color: #edf2f7;
+    border:  none !important;
+}
+.brand{
+    margin-right: 10% !important;
+    color: black !important;
+}
+.topNavBG{
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding: 14px !important;
+}
+.me-auto{
+    width: 70% !important;
+    }
+.rightMenusTop{
+    color: black !important;
+    font-weight:600 ;
+    margin-left: 16px !important;
+    font-family: 'Anybody', cursive;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+

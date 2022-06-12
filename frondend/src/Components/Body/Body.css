@@ -1,0 +1,32 @@
+.boxShadow{
+  box-shadow: 1px 1px 4px 1px grey;
+  height: 300px;
+  border: 1px solid black;
+  /* background-image: linear-gradient(transparent, black) !important */
+}
+
+.newTrendsShadow{
+  border: 1px solid rgb(207, 207, 207);
+  max-width: 450px !important;
+  box-shadow: 1px 1px 6px 1px  grey;
+
+}
+table{
+  padding: 0px !important;
+}
+.img-fluidbrd{
+  border-left: 2px solid white;
+}
+.view{
+  background: transparent !important;
+  padding: 2px !important;
+  padding-left: 8px!important;
+  padding-right: 8px!important;
+  text-shadow: 2px 1px 4px rgb(12, 12, 12);
+  border-radius: 0px !important;
+  border: 0px solid white !important;
+}
+.mostPurchased{
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+}
