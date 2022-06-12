@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
     "frontend": "npm start --prefix frondend",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn heroku-postbuild --prefix frondend && npm run build --prefix frondend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn heroku-postbuild --prefix frondend && yarn build --prefix frondend"
   },
   "author": "",
   "license": "ISC",
