@@ -1,7 +1,9 @@
 yarn create react-app appname
 cd my-react-app
 yarn add react-bootstrap
+
 yarn add react-router-dom@5.3.0  
+yarn add react-router-dom@5.3.0  react-router-bootstrap   instal together react router and react router boostrap
 
 yarn add react-slick
 yarn add slick-carousel

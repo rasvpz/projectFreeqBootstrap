@@ -12,7 +12,7 @@ const menWear = [
       description:'Men Yellow Blue Striped Pure Cotton Polo Collar Pure Cotton T-shirt',
       quantity: 25,
       ratings:1,
-      reviews:"This one also good & somehow I'm satisfied except the length is bit shorter than expected.",
+      reviews:8,
       trend:'no',
       seasonFavorite:'yes',
       mostPurchased:6
@@ -31,7 +31,7 @@ const menWear = [
         description:'Men Yellow Printed Cotton Pure Cotton T-shirt',
         quantity: 30,
         ratings: 1.5,
-        reviews:"Nice one color is Same as shown in the product image, perfect fit and love this one",
+        reviews:4,
         trend:'yes',
         seasonFavorite:'yes',
         mostPurchased:7
@@ -50,7 +50,7 @@ const menWear = [
         description:'Men Black Brand Logo Printed Slim Fit Pure Cotton T-shirt',
         quantity: 35,
         ratings:2,
-        reviews:"This one also good & somehow I'm satisfied except the length is bit shorter than expected. Thanks freeQ",
+        reviews:12,
         trend:'yes',
         seasonFavorite:'yes',
         mostPurchased:8
@@ -69,7 +69,7 @@ const menWear = [
         description:'Men Red Black Pure Cotton Brand Logo Print Round Neck Pure Cotton T-shirt',
         quantity: 40,
         ratings:2.5,
-        reviews:"It looks like a premium tshirt, Must buy guys. Thank you",
+        reviews:5,
         trend:'yes',
         seasonFavorite:'yes',
         mostPurchased:9
@@ -88,7 +88,7 @@ const menWear = [
         description:'Men Dark Blue Solid Polo Collar Regular Sleeves Pure Cotton T-shirt',
         quantity: 45,
         ratings:3,
-        reviews:"Great product good quality I can always trust Myntra for great service and good customer response have always had a good experience.",
+        reviews:15,
         trend:'no',
         seasonFavorite:'yes',
         mostPurchased:10
@@ -107,7 +107,7 @@ const menWear = [
         description:'Men Black & White Typography Printed Pure Cotton T-shirt',
         quantity: 50,
         ratings:3.5,
-        reviews:"Black and white Tshirt for men Typography printed Regular length Round neck.",
+        reviews:7,
         trend:'yes',
         seasonFavorite:'yes',
         mostPurchased:11
@@ -126,7 +126,7 @@ const menWear = [
         description:'Men Orange Brand Logo Printed Round Neck T-shirt',
         quantity: 55,
         ratings:4,
-        reviews:"The world cant wait, so lets take our forever faster approach and move forward on sustainability. ",
+        reviews:4,
         trend:'no',
         seasonFavorite:'yes',
         mostPurchased:12
@@ -145,7 +145,7 @@ const menWear = [
         description:'Men Teal Green Solid Round Neck T-shirt',
         quantity: 40,
         ratings:4.5,
-        reviews:"It looks perfect i ordered m size though my ht is 5 11 , colour looks beautiful simple and material ised is great ",
+        reviews:17,
         trend:'no',
         seasonFavorite:'yes',
         mostPurchased:13
