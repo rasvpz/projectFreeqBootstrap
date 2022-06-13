@@ -1,28 +1,26 @@
 
 import Header from './Components/Header/Header'
-import TopRated from './Components/Body/TopRated'
+import Home from './Components/Body/Home'
 import Footer from './Components/Footer/Footer'
 import Carousel from './Components/Carousal/Carousal'
 import './bootstrap.min.css'
-import NewTrends from './Components/Body/NewTrends'
-import MostPurchasedItems from './Components/Body/MostPurchasedItems'
-import SeasonFavourite from './Components/Body/SeasonFavourite'
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'
 
 
 const  App = () => {
   return (
-    <>
+    <Router>
     <Header />
     <Carousel />
       <main style={{margin: '29px'}}>
-        <TopRated />
-        <NewTrends />
-        <MostPurchasedItems />
-        <SeasonFavourite />
+      <Routes>
+        <Route  path = '/' element={<Home/>} />
+        
+        </Routes>
       </main>
     <Footer />
 
-    </>
+    </Router>
   );
 }
 

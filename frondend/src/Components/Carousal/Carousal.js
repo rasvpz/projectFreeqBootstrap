@@ -3,7 +3,7 @@ import {Row, Col, Button} from 'react-bootstrap'
 import '../Carousal/Carousal.css'
 import menuBars from '../../Controller/NavBars/NavMenu'
 import { BsChevronRight } from "react-icons/bs";
-
+import { Link } from 'react-router-dom'
 
 
 const Carousal = () => {
@@ -40,17 +40,17 @@ const Carousal = () => {
       </div>
 
   <Row className='banner'>
-
     <Col className='col' xs={{ span: 6, order: 2 }} md={{ span: 2, order: 1 }}> 
-       {/* <span className='categoryHeading'>Categories</span><br /> */}
         <br />            
        {  Object.keys(currentCat).length !== 0 &&
                  currentCat[0]?.Categories.map((val)=>{
                    return (
                      <>
-                    <span className='subCat' style={{cursor:'pointer'}} onClick={()=>{
+                    <span className='subCat' onClick={()=>{
                         setCurrentSub(val)
-                    }}>  {val}  <BsChevronRight style={{height:'9px'}}/></span><br/>
+                        // console.log('lklkl', currentCat[0].color);                
+                }}  style={{cursor:'pointer', color:`${currentCat[0].color}`}}>
+                    {val}  <BsChevronRight style={{height:'9px'}}/></span><br/>
                     </>
                    )
                  })
@@ -59,16 +59,12 @@ const Carousal = () => {
     </Col>
 
     <Col style={{marginLeft:'-36px'}} className='col' xs={{ span: 6, order: 3 }} md={{ span: 2, order: 2 }}> 
-    {/* <span className='categoryHeading'>Items</span><br /> */}
         <br />
         {  Object.keys(currentCat).length !== 0 && currentSub !== null &&
           currentCat[0][(currentSub).replace(" ","_")].map((val)=>
              <><span>{val}</span><br/></>
           )
         } 
-
-
-
     </Col>    
 
     <Col xs={{ span: 12, order: 1 }} md={{ span: 8, order: 3 }}>
@@ -79,10 +75,7 @@ const Carousal = () => {
         </tr>
       </table>
     </Col>
-
   </Row>
-  
-
     </>
   )
 }
