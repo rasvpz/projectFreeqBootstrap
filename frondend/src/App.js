@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Carousel from './Components/Carousal/Carousal'
 import './bootstrap.min.css'
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'
+import Products from './Components/ProductsPage/Products'
 
 
 const  App = () => {
@@ -15,7 +16,7 @@ const  App = () => {
       <main style={{margin: '29px'}}>
       <Routes>
         <Route  path = '/' element={<Home/>} />
-        
+        <Route  path = '/products/:name' element={<Products />} />
         </Routes>
       </main>
     <Footer />

@@ -62,7 +62,10 @@ const Carousal = () => {
         <br />
         {  Object.keys(currentCat).length !== 0 && currentSub !== null &&
           currentCat[0][(currentSub).replace(" ","_")].map((val)=>
-             <><span>{val}</span><br/></>
+             <>
+             <span style={{cursor:'pointer'}}>
+             <Link to={`/products/${val}`}> {val} </Link>
+              </span><br/></>
           )
         } 
     </Col>    
