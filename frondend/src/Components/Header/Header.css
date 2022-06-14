@@ -18,6 +18,11 @@
 .brand{
     margin-right: 10% !important;
     color: black !important;
+    
+}
+.brnd{
+    text-decoration: none !important;
+    color: black !important;
 }
 .topNavBG{
     border-bottom: 1px solid #e2e8f0 !important;
