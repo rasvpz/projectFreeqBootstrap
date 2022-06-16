@@ -1,7 +1,7 @@
 .boxShadow{
-  box-shadow: 1px 1px 4px 1px grey;
+  /* box-shadow: 1px 1px 4px 1px grey; */
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* background-image: linear-gradient(transparent, black) !important */
 }
 
@@ -29,4 +29,117 @@ table{
 .mostPurchased{
   border-left: 4px solid white;
   border-right: 4px solid white;
+}
+.mycard{
+  position:ralative;
+  overflow:hidden;
+   height:100%;
+   cursor: pointer;
+   max-width: 303px;
+   border: 1px solid #dddddd;
+   
+ }
+
+.mycard-overlay{
+  position:absolute; 
+  background:rgba(0,0,0,.5);
+  left:0;  
+  top: 5px !important;
+  height:20%;
+  margin-top: 220px;
+  z-index: 1;
+  transition:all 350ms cubic-bezier(0, 0, 0.2, 1);
+  display:flex;
+  align-items:center;
+  background:rgba(118,207,28 ,.5);
+  padding-left: 16px !important;
+  cursor: pointer;
+
+} 
+
+.mycard:hover .mycard-overlay {
+  top: 0;
+  
+}
+
+.mycard-overlay-inner :hover{
+    background-color: #76cf1c;
+    
+}
+
+.newTrendBg{
+  /* background-color: #f3e9e9 !important; */
+  color:red;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.fourPics{
+  border: 1px solid rgb(211, 211, 211) !important;
+  border-bottom: none !important;
+  
+}
+
+.innerfourPics{
+  border: 1px solid rgb(211, 211, 211) !important;
+  padding: 20px;
+  width: 302px;
+  border-top: none !important;
+}
+.innerfourPics p{
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #686868;
+  padding-bottom: 0px !important;
+}
+
+.innerfourPics span{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  
+}
+
+.newTrendBg{
+  padding-top: 70px;
+}
+
+.newTrendBghOne{
+  color: rgb(90, 90, 90);
+}
+
+.newTrendBghTwo{
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+}
+.addToCart{
+  background-color: blue !important;
+  border-radius: 0px !important;
+}
+.myd-none{
+  display: none !important;
+  background-color: #f6f6f6;
+}
+/* img-responsive" */
+
+@media only screen and (max-width: 600px) {
+  .img-responsive {
+    width: 400px !important;
+  }
+  .myd-none{
+    display: block !important;
+  border: 1px solid rgb(223, 222, 222) !important;
+
+  }
+  .newTrendBghOne{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+  }  
+
+  .newTrendBghTwo{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
 }

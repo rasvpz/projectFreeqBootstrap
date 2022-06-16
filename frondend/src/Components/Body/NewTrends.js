@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -11,8 +12,8 @@ const NewTrends = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 2.5,
-    slidesToScroll: 2.5,
+    slidesToShow: 1,
+    slidesToScroll:1,
     initialSlide: 0,
     
     
@@ -46,126 +47,87 @@ const NewTrends = () => {
   return (
     
     <>
-    <div style={{border: '1px solid #e2e8f0', padding: '28px'}}>
-      <h5 style={{marginBottom: '28px'}}>New trends</h5>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="main_title">
+            <h3 className="hthree_title"><span> New Arrivals</span><hr className="myHr" /></h3>            
+            <p className="subHeading">Keep fresh & keep hot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="myd-none" >
+    <h5 className='newTrendBghOne'>COLLECTION OF 2022</h5>
+    <h3 className='newTrendBghTwo'>BEST QUALITY CONTAINER</h3>
+    <img className="myBrdr" srcmarginLeft={4}  alt="1" src="../../images/newArrival/8.jpg"></img>
+
+    </div>
       <Slider {...settings}>
  
-      <div className='newTrendsShadow'>
-            <table>
-                <tr >
-                    <td>
-                    <div style={{position: 'relative'}}>
-                        <img className='img-fluid img-fluidbrd' alt="1" src="../../images/NeweTrends/Khushal K Big.jpg"></img>
-                        <div style={{position: 'absolute', top:'69.5%', textAlign: 'center', color: 'white', padding:'10px', width:'100%', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-                            <h5>Khushal Chirudhars</h5>
-                            <p>Cool style with high quality  </p>
-                            <h6><u>know more</u></h6>
+
+
+
+
+
+      <div className="d-none d-sm-table-cell">
+            <div className="col-12" >
+                <div class="row">
+                    <div class="col-6 newTrendBg"> 
+                    <h5 className='newTrendBghOne'>COLLECTION OF 2022</h5>
+                    <h3 className='newTrendBghTwo'>BEST QUALITY CONTAINER</h3>
+                    <br />
+                    <img className="img-responsive" srcmarginLeft={4}  alt="1" src="../../images/newArrival/1.jpg"></img>
+                    <br /><br /><br /><br />
+                    <div><h4>QR 1356</h4></div>
+                    <br />
+                    <br />
+                    <Button className='addToCart'>ADD TO CART</Button>
+                     </div>                
+                    <div class="col-6">
+                        <div class="row">
+                        <div marginBottom={8} className="col-6 d-none d-sm-table-cell " xs={{ span: 12, order: 1 }}  sm={{ span: 12, order: 1 }}>
+                            <img marginLeft={4}  alt="1" className='boxShadow fourPics' src="../../images/product/inspired-product/i3.jpg"></img>
+                            <div className="innerfourPics ">
+                                    <p>QUARTS ALUMINIUM</p>
+                                    <span>QR 425</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style={{fontSize:14, color:'#686868'}} ><del>QR 125</del></span>
+                            </div>
+                        </div>  
+
+                        <div  className="col-6  d-none d-sm-table-cell" xs={{ span: 12, order: 2 }}  sm={{ span: 12, order: 2 }}> 
+                        <img  marginLeft={4}  alt="1" className='boxShadow fourPics' src="../../images/product/inspired-product/i2.jpg"></img>
+                        <div className="innerfourPics ">
+                                    <p>QUARTS ALUMINIUM</p>
+                                    <span>QR 425</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style={{fontSize:14, color:'#686868'}} ><del>QR 125</del></span>
+                            </div>
+                        </div> 
                         </div>
-                    </div>    
-                    </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>
-                                    <div style={{position: 'relative'}}>
-                                         <img className='img-fluid'  alt="1" src="../../images/NeweTrends/Khushal K Big SmallTop.jpg"></img>
-                                         <div style={{position: 'absolute', top:'70%', textAlign: 'center', color: 'white', padding:'10px', width:'100%'}}>
-                                         <Button variant="dark" className='view'><u>view</u></Button>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                <div style={{position: 'relative'}}>
-                                    <img className='img-fluid'  alt="1" src="../../images/NeweTrends/Khushal K Big SmallBottom.jpg"></img>
-                                        <div style={{position: 'absolute', top:'70%', textAlign: 'center', color: 'white', padding:'10px', width:'100%'}}>
-                                        <Button variant="dark" className='view'><u>view</u></Button>
-                                        </div>
-                                </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-      </div>  
-
-      <div className='newTrendsShadow'>
-            <table>
-                <tr >
-                    <td>
-                        <div style={{position: 'relative'}}>
-                            <img alt="1" className='img-fluid img-fluidbrd' src="../../images/NeweTrends/Varanga Big.jpg"></img>
-                                <div style={{position: 'absolute', top:'69.5%', textAlign: 'center', color: 'white', padding:'10px', width:'100%', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-                                    <h5>Varanga Chirudhars</h5>
-                                    <p>Very trendy in style</p>
-                                    <h6><u>know more</u></h6>
-                                </div>                                
+                        <br />
+                        <div className="row">
+                        <div className="col-6  col-6 d-none d-sm-table-cell" xs={{ span: 12, order: 3 }}  sm={{ span: 12, order: 3 }}>
+                        <img alt="1" className='boxShadow fourPics' src="../../images/product/inspired-product/i1.jpg"></img>
+                               <div className="innerfourPics ">
+                                    <p>QUARTS ALUMINIUM</p>
+                                    <span>QR 300</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style={{fontSize:14, color:'#686868'}} ><del>QR 125</del></span>
+                            </div>
+                        </div>               
+                        <div className="col-6  d-none d-sm-table-cell" xs={{ span: 12, order: 4 }}  sm={{ span: 12, order: 4 }}>
+                        <img alt="1" className='boxShadow fourPics' src="../../images/product/inspired-product/i8.jpg"></img>
+                        <div className="innerfourPics ">
+                                    <p>QUARTS ALUMINIUM</p>
+                                    <span>QR 200</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style={{fontSize:14, color:'#686868'}} ><del>QR 125</del></span>
+                            </div>
                         </div>
-                    </td>
-                   
-                    <td>
-                        <table className="thumbtbl">
-                            <tr>
-                                <td>
-                                    <div style={{position: 'relative'}}>
-                                    <img alt="1" className='img-fluid' src="../../images/NeweTrends/Varanga SmallBottom.jpg"></img>
-                                        <div style={{position: 'absolute', top:'70%', textAlign: 'center', color: 'white', padding:'10px', width:'100%'}}>
-                                        <Button variant="dark" className='view'><u>view</u></Button>
-
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div style={{position: 'relative'}}>
-                                    <img alt="1" className='img-fluid' src="../../images/NeweTrends/Varanga SmallTop.jpg"></img>
-                                         <div style={{position: 'absolute', top:'76%', textAlign: 'center', color: 'white', padding:'10px', width:'100%'}}>
-                                         <Button variant="dark" className='view'><u>view</u></Button>
-
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-      </div> 
-      
-      <div className='newTrendsShadow'>
-            <table>
-                <tr >
-                    <td>
-                        <div style={{position: 'relative'}}>
-                            <img alt="1" className='img-fluid img-fluidbrd' src="../../images/NeweTrends/Khushal K Big.jpg"></img>
-                            <div style={{position: 'absolute', top:'69.5%', textAlign: 'center', color: 'white', padding:'10px', width:'100%', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-                                <h5>Kushal Chirudhars</h5>
-                                <p>Very trendy in style</p>
-                                <h6><u>know more</u></h6>
-                            </div>  
-                        </div>
-                    </td>
+                    </div>
+                </div>
+                </div>
+            </div>
+     </div> 
 
 
-                    <td>
-                        <table>
-                            <tr>
-                                <td><img alt="1" className='img-fluid' src="../../images/NeweTrends/Khushal K Big SmallTop.jpg"></img></td>
-                            </tr>
-                            <tr>
-                                <td><img alt="1" className='img-fluid' src="../../images/NeweTrends/Khushal K Big SmallBottom.jpg"></img></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-      </div> 
     </Slider>
-    </div>
+
 <br />
 
     </>
@@ -173,4 +135,11 @@ const NewTrends = () => {
 }
 
 export default NewTrends
+
+
+
+
+
+
+
 

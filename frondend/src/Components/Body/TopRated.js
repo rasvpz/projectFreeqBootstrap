@@ -8,10 +8,10 @@ const TopRated = () => {
 
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 5.03,
-    slidesToScroll: 5.03,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -46,104 +46,109 @@ const TopRated = () => {
   return (
     
     <>
-    <div style={{border: '1px solid #e2e8f0', padding: '28px'}}>
-      <h5 style={{marginBottom: '28px'}}>Top rated</h5>
-      <Slider {...settings}>
- 
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/U.S. Polo Assn.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="main_title">
+            <h3 className="hthree_title"><span> Products</span><hr className="myHr" /></h3>            
+            <p className="subHeading">Keep fresh keep & hot</p>
           </div>
+        </div>
       </div>
+    </div>
+      <Slider {...settings}>
+
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i1.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">ALUMINIUM</h5>
+      </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
+      </div>
+
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i2.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">PLASTIC</h5>
+      </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
       </div>
 
 
        
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/roadster.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i3.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">FOAM</h5>
       </div>
-      </div>
-
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/roadster Blk.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
-      </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
       </div>
 
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/puma.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i4.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">PAPPER</h5>
       </div>
-      </div>
-
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/Nautica.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
-      </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
       </div>
 
-
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/HRX by Hrithik Roshan.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i5.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">ALUMINIUM</h5>
       </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
       </div>
 
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/kelvin Clean.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i6.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">PLASTIC</h5>
       </div>
-      </div>      
-
-
-      <div>
-        <div style={{position: 'relative'}}>
-          <img alt="1" className='boxShadow' src="../../images/T-shirts/roadster Life Go.jpg"></img>
-          <div style={{position: 'absolute', top:'58%', textAlign: 'center', color: 'white', padding:'10px', backgroundImage: 'linear-gradient(transparent, #555555)'}}>
-            <h5>Print T-Shirts</h5>
-            <p>Edit both cool and casuals  </p>
-            <h6><u>Shop Now</u></h6>
-          </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
       </div>
-      </div>   
 
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i7.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">PAPPER</h5>
+      </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
+      </div>
+
+      <div class="mycard">
+      <img alt="1" className='boxShadow' src="../../images/product/inspired-product/i8.jpg"></img>
+       <div class="card-body">
+         <h5 class="card-title">FOAM</h5>
+      </div>
+      {/* <div class="card-overlay">
+          <div class="card-overlay-inner">
+        Lorem ipsum dolor
+        </div> </div> */}
+      </div>  
     </Slider>
-    </div>
+
 <br />
 
 

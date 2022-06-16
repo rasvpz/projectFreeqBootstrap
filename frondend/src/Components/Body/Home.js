@@ -9,8 +9,8 @@ const Home = () => {
     <>
         <TopRated />
         <NewTrends />
-        <MostPurchasedItems />
-        <SeasonFavourite />    
+        {/* <MostPurchasedItems />
+        <SeasonFavourite />     */}
     
     </>
   )
