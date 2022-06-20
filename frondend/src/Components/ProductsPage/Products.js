@@ -23,11 +23,7 @@ const Products = () => {
         </div>
       </div>
     </div>
-
-
-
-
-    <Row  >
+    <Row>
                  {
                      product.map((filteredProducts) => (
                           <Col className="rowMarigin" sm={12} md={6}lg={4} xl={3}>                              
@@ -36,11 +32,7 @@ const Products = () => {
   <Card.Body style={{padding: '0rem 0rem'}}>
     <div>
       <img style={{width: '19.9rem'}} alt="T-Shirt" src= {'../../images/product/inspired-product/'+(filteredProducts.pic)} ></img>
-      
-      
-      
-      
-       <Card.Title className="prodName" as='p' style={{ border:'1px solid white', padding:'10px', paddingLeft:'10px'}}>{ filteredProducts.name}</Card.Title>
+<Card.Title className="prodName" as='p' style={{ border:'1px solid white', padding:'10px', paddingLeft:'10px'}}>{ filteredProducts.name}</Card.Title>
     </div>
 
     <div style={{marginTop:'-10px'}}>

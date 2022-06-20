@@ -1,4 +1,4 @@
-#btnGroupAddon{
+/* #btnGroupAddon{
     height: 38px !important;
     background-color: #edf2f7;
     font-weight:bolder ;
@@ -41,5 +41,158 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Rubik', sans-serif;
-}
+} */
 
+.CmpLogo{
+    width: auto;
+    height: 75px;
+    padding: 4px;
+    margin-left: 20px !important;
+  }
+  .menuCol1{
+    background-color: #d70900;
+    border-top-left-radius: 50px !important;
+    height: 75px;
+    
+  } 
+  .menuCol2{
+    padding-top: 8px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  .innerCol1{
+   background-color: black;
+   margin-left: 12px !important;
+   padding: 14px;
+   margin-top: -8px !important;
+   border-top-right-radius: 50px !important;
+   margin-right: 50px !important;
+   font-size: 14px;
+   z-index: 100 !important;
+
+  }
+  
+  .innerCol2{
+    margin-left: 22px !important; 
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    padding-top: 8px !important;
+    color: #02564a;
+
+  }
+
+
+  .innerRow{
+    margin-right:0px !important;
+  }
+
+  .myFirstRow{
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;    
+  }
+
+.newMainMenuSpan{
+    padding: 12px !important;
+}
+.bannerBg {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top:-22px !important;
+  }
+
+  .imgBGMotionBlur {
+    height: 350px;
+  }
+  
+  .BannerContent {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+  }
+
+  .row>*{
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;
+  }
+  .bannerStrip{
+    background-color: #a6ccd0;
+    height: 24px;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+    margin-left: 12px !important;
+
+  }
+
+  .bannerContentRow{
+    margin-left: 12px !important;
+  }
+  .bannerSlogan{
+    margin-top: 10%;
+    margin-left: 8%;
+  }
+
+  .MycontainerSecont {
+    position: relative;
+     color: white;
+  }
+  .top-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100 !important;
+  }
+  .bottomStrip{
+    background-color: #a6ccd0;
+    height: 36px;
+    width: 100%;
+    margin: 0 0 0 0 !important;
+  }
+ .bannerButton{
+    border: 1px solid #438f83;
+    background-color: #cecece;
+    width: 120px;
+    font-size: 12px;
+    color: #438f83;
+    padding: 4px;
+    margin-left: 180px;
+    margin-top: 10px;
+ }
+
+
+  @media only screen and (max-width: 600px) {
+    .CmpLogo {
+        width: auto;
+
+        margin-left: 0px !important;
+        height: 50px !important;
+    }
+
+    .innerCol1{
+        font-size: 12px;
+        color: white;
+        font-weight: 600;
+        border-top-right-radius: 0px !important;
+       
+    }
+    .menuCol1{
+        padding: 8px !important;
+        border-top-left-radius: 0px !important;
+    }  
+    .innerCol2{
+        color: none;  
+        margin-left: 22px !important; 
+        font-size: 12px !important;
+    }
+
+    .bannerSlogan{
+         /* margin-top: 0%; */
+        margin-left: -10px !important; 
+      }
+
+      .bannerButton{
+        margin-left: 100px;
+     }
+  }

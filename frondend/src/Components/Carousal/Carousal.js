@@ -81,6 +81,8 @@ const Carousal = () => {
       </div>
 
       {
+
+        
         <Row className="banner">
           <Col
             className="col"

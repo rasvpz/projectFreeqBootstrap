@@ -6,21 +6,18 @@ const menus = [
           Containers:['Normal Container', 'Combo Container', 'Roaster Container', 'Bowls', 'Treys' ],
           Foils:['Gold Foils', 'Silver Foils' ],
           Plates:['Oval Plates', 'Rectangle Plates', 'Round Plates' ],
-          Pots:['Round Pot', 'Rectangle Pot'],
-          Round_Cups:['Cake Cups', 'Rounded Cups'],
           },
-        color:'red'
+        color:'#66aca1'
     },
 
     {
       _id: '2',
       name: 'Papper',
         Categories:{
-          Glasses:['Normal Glasses', 'Printed Glasses', 'Juice Glasses' ],
-          Plates:['Oval Plates', 'Rectangle Plates', 'Round Plates', 'Bowls', 'Treys' ],
-          Tissues:['Facial Tissues', 'Folded Tissues', 'Rolled Tissues', 'Toilet Plates'],
-          Napkins:['Normal Size', 'Big Size'],
-          Stroves:['Plane Stroves', 'Colored Stroves'],
+          Cup:['Normal Glasses', 'Printed Glasses', 'Juice Glasses' ],
+          Bag:['Oval Plates', 'Rectangle Plates', 'Round Plates', 'Bowls', 'Treys' ],
+          Bowl:['Facial Tissues', 'Folded Tissues', 'Rolled Tissues', 'Toilet Plates'],
+          Box:['Normal Size', 'Big Size'],
           },
       color:'#ee00ca'
     },

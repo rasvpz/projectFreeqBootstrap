@@ -1,0 +1,101 @@
+.rowTopCategories{
+    background-color: #cadfe2;
+    text-align: center;
+}
+.colTopCategories{
+    padding: 24px;
+}
+.innercolTopCategories{
+    border: 1px solid #6ba2ab;
+    background-color: #e0ecec;
+    background-image: linear-gradient(#e0ecec,#e2f5f5);
+}
+.head1{
+    padding-top: 26px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.head2{
+    padding: 16px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.head3{
+    color: #00444f;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 24px;
+}
+
+.head4{
+    padding: 16px;
+    background-color: #00444f;
+    color: #cfcfcf;
+    border: 1px solid #00444f;
+    width: 100px !important;
+    text-align: center !important;
+    margin: auto;
+    padding: 4px !important;
+    margin-bottom: 24px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.topCategory .carousel-control-prev-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); */
+    color:green !important;
+    background-color: #73141a;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    opacity: 1 !important;
+
+}
+
+.topCategory .carousel-control-next-icon {
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); */
+    color:green !important;
+    background-color: #73141a;
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+
+}
+
+.topCategory .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .8 !important;
+    transition: opacity .15s ease;
+}
+.slickImgFluid{
+    padding: 4px !important;
+    border: 1px solid #6ba2ab;
+    background-color: #e0ecec;
+}
+
+@media only screen and (max-width: 600px) {
+    .colTopCategories{
+        padding: 0px;
+    }
+    .innercolTopCategories{
+        padding:8px
+    }
+    .head2{
+        font-size: 22px;
+    }
+  
+  }
