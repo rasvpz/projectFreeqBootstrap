@@ -9,7 +9,7 @@
     "frontend": "yarn start --prefix frondend",
     "heroku-postbuild": "yarn install && yarn --cwd ./frondend install && yarn --cwd ./frondend run build"
   },
-  "author": "",
+  "author": "AbduRashid",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"

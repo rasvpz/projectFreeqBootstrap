@@ -46,15 +46,17 @@ const TopRated = () => {
   return (
     
     <>
-    <div class="container">
+    <div className="row productsRow">
+    <div>
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h3 className="hthree_title"><span> Products</span><hr className="myHr" /></h3>            
+            <h3 className="hthree_title"><span> Products</span></h3>            
             <p className="subHeading">Keep fresh keep & hot</p>
           </div>
         </div>
       </div>
+    </div>
     </div>
       <Slider {...settings}>
 

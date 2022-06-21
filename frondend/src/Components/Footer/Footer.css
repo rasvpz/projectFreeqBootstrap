@@ -1,0 +1,10 @@
+.bg-voilet{
+    background-color: #2f949b;
+    font-family: 'Acme', sans-serif;
+    text-align: left !important;
+
+}
+.footerRow{
+    border-bottom-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+}

@@ -1,0 +1,38 @@
+.aboutUsRow{
+    background-color: #459ba8;
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
+.aboutUsInnerMargin{
+    padding: 8px 8px 8px 8px ;
+    background-color: #459ba8;
+
+}
+
+.sectionaboutUs{
+    padding: 20px;
+    /* background-image: linear-gradient(#6be9fc,#459ba8); */
+    background-color: #459ba8;
+    /* border: 1px solid #6ba2ab; */
+
+}
+
+.sectionaboutUs p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(214, 236, 240);
+
+}
+.sectionaboutUs h3{
+    font-family: 'Acme', sans-serif;
+
+    color: #c9ecf0;
+}
+
+.sectionaboutUs h6{
+    font-family: 'Acme', sans-serif;
+    color: #80cbd4;
+    text-align: justify;
+    text-justify: inter-word;
+}

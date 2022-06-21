@@ -61,6 +61,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: bold;
+    /* position: fixed; */
 
   }
 
@@ -123,6 +124,8 @@
     height: 24px;
     padding-left: calc(var(--bs-gutter-x) * .5) !important;
     margin-left: 12px !important;
+    width: 110%;
+    
 
   }
 

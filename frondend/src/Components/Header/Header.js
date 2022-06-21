@@ -109,8 +109,8 @@ const Header = () => {
       </div>       
       
       </div>
-      <div className="col-lg-7 col-sm-12 col-12 col-md-12">
-            <Carousal style={{}}/>
+      <div className="col-lg-7 col-sm-12 col-12 col-md-12 d-none d-sm-table-cell">
+            <Carousal/>
       </div>
       </div>              
 

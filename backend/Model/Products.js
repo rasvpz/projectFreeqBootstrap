@@ -27,12 +27,12 @@ const productsSchema = mongoose.Schema(
         },
 
         size: {
-            type: String,
+            type: Array,
             required: true,
         },
 
         color: {
-            type: String,
+            type: Array,
             required: true,
         },
 
@@ -58,7 +58,7 @@ const productsSchema = mongoose.Schema(
         },
 
         reviews: {
-            type: String,
+            type: Array,
             default: 'No Reviews' 
         },
 

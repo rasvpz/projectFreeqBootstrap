@@ -35,8 +35,10 @@ table{
   overflow:hidden;
    height:100%;
    cursor: pointer;
-   max-width: 303px;
-   border: 1px solid #dddddd;
+   max-width: 290px;
+   border: 1px solid #6ba2ab;
+   background-color: #cadfe2;
+   margin-right: 8px !important;
    
  }
 
@@ -65,6 +67,17 @@ table{
 .mycard-overlay-inner :hover{
     background-color: #76cf1c;
     
+}
+.card-title{
+  color: #00444f;
+  font-family: 'Open Sans', sans-serif;
+}
+.myHr{
+  background-color: #894045;
+}
+.boxShadow{
+    border-bottom: 1px solid #6ba2ab;
+
 }
 
 .newTrendBg{
@@ -119,8 +132,17 @@ table{
   display: none !important;
   background-color: #f6f6f6;
 }
-/* img-responsive" */
-
+.roductsRow{
+  background-color: #cadfe2;
+}
+.hthree_title{
+  text-align: center;
+  margin-top: 24px;
+  color: black;
+}
+.subHeading{
+  text-align: center;
+}
 @media only screen and (max-width: 600px) {
   .img-responsive {
     width: 400px !important;
@@ -141,5 +163,11 @@ table{
     font-size: 20px;
     padding-top: 20px;
   }
+  .mycard{
+
+     max-width: 303px;
+     margin-left: 24px !important;
+     
+   }
 
 }

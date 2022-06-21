@@ -1,0 +1,56 @@
+.MainNewsLetter{
+    background-color: #a6ccd0;
+    /* height: 170px; */
+    font-family: 'Open Sans', sans-serif;
+    
+    color:#156470;
+
+}
+.newLetterColPadding{
+    padding: 24px !important;
+}
+.socilaIconMainDiv{
+    margin-top: 16px;
+}
+.socilaIconMainDiv span{
+    margin-right: 40px;
+}
+
+.newsLetterForm{
+    width: 100%;
+}
+.connectWithOslo{
+    margin-bottom:20px;
+}
+
+.newsletterButton{
+    border-radius: 0px !important;
+    background-color: #34828e !important;
+    border-color: #34828e !important;
+}
+.socilaIconMainDiv span img{
+    margin-top: 16px;
+    width: auto;
+}
+.facebook{
+    width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .headingJoinNewsLetter{
+       font-size: 20px;
+       margin-top: 8px;
+    }
+    .socilaIconMainDiv span img{
+        margin-top: 16px;
+        width: 50px;
+    }
+    .socilaIconMainDiv span{
+        margin-right: 30px;
+    }
+    .facebook{
+        width: 28px !important;
+    }
+
+  }
+

@@ -15,13 +15,35 @@ const TopCategoriesSlickSlack = () => {
       rows: 2,
       slidesPerRow: 2,
       width:100,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
+        }
+      ]
     };
 
     return (
-      <div>
+      
+<div className="slickgMargnTop">
+    <div className='secondDivSlickSlackMargnTop'>
         <Slider {...settings}>
           <div>
-          <img className='img-fluid slickImgFluid' style={{width: "262px"}} alt="1" src="../../images/product/inspired-product/i1.jpg"></img>
+          <img className='img-fluid slickImgFluid' alt="1" src="../../images/product/inspired-product/i1.jpg"></img>
           </div>
           <div>
           <img className='img-fluid slickImgFluid' alt="1" src="../../images/product/inspired-product/i1.jpg"></img>
@@ -69,6 +91,8 @@ const TopCategoriesSlickSlack = () => {
           <img className='img-fluid slickImgFluid' alt="1" src="../../images/product/inspired-product/i1.jpg"></img>
           </div>
         </Slider>
+      </div>
+
       </div>
     );
   }
