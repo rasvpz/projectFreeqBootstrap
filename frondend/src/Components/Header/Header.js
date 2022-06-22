@@ -1,10 +1,10 @@
 import React, { useEffect, useState, Component } from "react";
 import {} from 'react-bootstrap'
 import '../Header/Header.css'
-import { BsSearch, BsHeart, BsPerson, BsCartDash, BsChevronDoubleRight } from "react-icons/bs";
-import { ButtonLink } from 'react-router-dom'
+import { BsHeart, BsPerson, BsCartDash, BsChevronDoubleRight } from "react-icons/bs";
 import menuBars from "../../Controller/NavBars/NavMenu";
 import Carousal from "../Carousal/BannerCarousal";
+import SideNavBar from "../SideNavBar/SideNavBar";
 
 const Header = () => {
   const [currentItem, setCurrentItem] = useState(menuBars[0]);
@@ -47,67 +47,32 @@ const Header = () => {
         <img className="CmpLogo" alt="menswear" src="../../images/logoOslo.png"></img>        
       </div>
     	<div className=" col-lg-10 col-sm-9 col-9 col-md-9 menuCol2">
+
         <div className='row innerRow'>
-          <div className="col-lg-12 col-sm-12 col-12 col-md-12 innerCol1"> 
-          {menuBars.map((mainMenus) => {
-          return (
-            <span
-              className="newMainMenuSpan"
-              onClick={() => {
-                setCurrentItem({ ...mainMenus });
-              }}
-              style={
-                currentItem.name === mainMenus.name
-                  ? {
-                      borderBottom: `3px solid ${mainMenus.color}`,
-                      color: `${mainMenus.color}`,
-                      cursor: 'pointer',
-                    }
-                  : {}
-              }
-            >
-              {mainMenus.name}
-            </span>
-          );
-        })}
-       </div>      
-          <div className="col-lg-12 col-sm-12 col-12 col-md-12">
-          <>
-              {currentSub.map((val) => (
-                <>
-                
-                  <span className="innerCol2"
-                    style={{ 
-                      cursor: "pointer",
-                      color: `${
-                        val === currentSubCat 
-                        ? currentItem.color
-                        : ''
-                      }`,
-                    }}
-                    onClick={() => {
-                      setCurrentSubCat(val);
-                    }}
-                  >
-                     {val.replace("_", " ")}</span>
-                 
-                </>
-              ))}
-            </>
-          </div>
+          
+          <div className="col-lg-12 col-sm-12 col-12 col-md-12 innerCol1">
+            <SideNavBar />
+            <div className='alignRight'>
+            <span className="newMainMenuSpan"><BsHeart /> &nbsp; WISHLIST </span>
+            <span className="newMainMenuSpan"><BsPerson /> &nbsp; SIGNUP </span>
+             <span className="newMainMenuSpan"><BsCartDash /> </span>
+            </div>
+       </div> 
+
         </div>
       </div>
 
-      <div className="col-lg-12 col-sm-12 col-12 col-md-12" style={{height:'370px'}}>
+      <div className="col-lg-12 col-sm-12 col-12 col-md-12">
       
       <div className="row bannerContentRow">
       <div className="col-lg-5 col-sm-12 col-12 col-md-12"> 
+      
       <img className="bannerSlogan" alt="Slogans" src="../../images/banner/bannerHeadinSlogan.png"></img> 
       
       <div className="bannerButton"> 
             Get Top Products <BsChevronDoubleRight style={{color:'#d70900'}} />
       </div>       
-      
+      <br />
       </div>
       <div className="col-lg-7 col-sm-12 col-12 col-md-12 d-none d-sm-table-cell">
             <Carousal/>

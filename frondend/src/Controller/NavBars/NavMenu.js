@@ -7,7 +7,7 @@ const menus = [
           Foils:['Gold Foils', 'Silver Foils' ],
           Plates:['Oval Plates', 'Rectangle Plates', 'Round Plates' ],
           },
-        color:'#66aca1'
+        color:'#009a83'
     },
 
     {

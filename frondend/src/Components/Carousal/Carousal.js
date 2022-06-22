@@ -1,4 +1,3 @@
-import React, { useEffect, useState, Component } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import "../Carousal/Carousal.css";
 import menuBars from "../../Controller/NavBars/NavMenu";
@@ -8,6 +7,14 @@ import Carousel from 'react-bootstrap/Carousel';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import React, { useEffect, useState, Component } from "react";
+import {} from 'react-bootstrap'
+import '../Header/Header.css'
+import { BsSearch, BsHeart, BsPerson, BsCartDash, BsChevronDoubleRight } from "react-icons/bs";
+import { Button,Link } from 'react-router-dom'
+import menuBars from "../../Controller/NavBars/NavMenu";
+import Carousal from "../Carousal/BannerCarousal";
+import SideNavBar from "../SideNavBar/SideNavBar";
 const Carousal = () => {
 
     // slickSlack starts
@@ -81,8 +88,6 @@ const Carousal = () => {
       </div>
 
       {
-
-        
         <Row className="banner">
           <Col
             className="col"
@@ -102,9 +107,7 @@ const Carousal = () => {
                         : ''
                       }`,
                     }}
-                    onClick={() => {
-                      setCurrentSubCat(val);
-                    }}
+
                   >
                      {val.replace("_", " ")}<BsCaretRightFill style={{height: "12",marginTop:'11.5px',marginLeft:'12px', color: `${val === currentSubCat? currentItem.color : '' }`, display: `${val === currentSubCat? 'block' : 'none' }`}} /></span>
                  
