@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Component } from "react";
 import {} from 'react-bootstrap'
 import '../Header/Header.css'
-import { BsHeart, BsPerson, BsCartDash, BsChevronDoubleRight } from "react-icons/bs";
+import { BsFillHeartFill, BsFillPersonFill, BsCartFill, BsChevronDoubleRight } from "react-icons/bs";
 import menuBars from "../../Controller/NavBars/NavMenu";
 import Carousal from "../Carousal/BannerCarousal";
 import SideNavBar from "../SideNavBar/SideNavBar";
@@ -52,11 +52,10 @@ const Header = () => {
           
           <div className="col-lg-12 col-sm-12 col-12 col-md-12 innerCol1">
             <SideNavBar />
-            <div className='alignRight'>
-            <span className="newMainMenuSpan"><BsHeart /> &nbsp; WISHLIST </span>
-            <span className="newMainMenuSpan"><BsPerson /> &nbsp; SIGNUP </span>
-             <span className="newMainMenuSpan"><BsCartDash /> </span>
-            </div>
+            <span className="newMainMenuSpan"> HOME</span>
+            <span className="newMainMenuSpan"> ABOUT</span>
+            <span className="newMainMenuSpan"> CONTACT</span>
+            <span className="icons"><BsFillHeartFill className="iconsPadding"/> <BsFillPersonFill className="iconsPadding" /> <BsCartFill className="iconsPadding" /></span>
        </div> 
 
         </div>
@@ -77,6 +76,11 @@ const Header = () => {
       <div className="col-lg-7 col-sm-12 col-12 col-md-12 d-none d-sm-table-cell">
             <Carousal/>
       </div>
+      
+      <div className="col-lg-7 col-sm-12 col-12 col-md-12 bannerPicForMobile">
+      <img className="carousalMediaQuery" alt="Slogans" src="../../images/banner/carousalMediaQuery.png"></img>             
+      </div>
+
       </div>              
 
       </div>

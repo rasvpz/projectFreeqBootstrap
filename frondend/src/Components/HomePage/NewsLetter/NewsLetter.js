@@ -16,7 +16,7 @@ const NewsLetter = () => {
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
                     />
-                    <Button className="newsletterButton" variant="outline-secondary" id="button-addon2"> Join our mailing list <BsCaretRightFill style={{color:'#d70900'}} />  </Button>
+                    <Button className="newsletterButton2" variant="outline-secondary"> Join our mailing list <BsCaretRightFill style={{color:'#d70900'}} />  </Button>
                 </InputGroup>
         </div>
 

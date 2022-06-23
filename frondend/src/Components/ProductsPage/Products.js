@@ -23,7 +23,7 @@ const Products = () => {
         </div>
       </div>
     </div>
-    <Row>
+    <Row className="productsBg">
                  {
                      product.map((filteredProducts) => (
                           <Col className="rowMarigin" sm={12} md={6}lg={4} xl={3}>                              

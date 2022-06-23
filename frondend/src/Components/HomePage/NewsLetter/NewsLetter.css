@@ -23,10 +23,11 @@
     margin-bottom:20px;
 }
 
-.newsletterButton{
+.newsletterButton2{
     border-radius: 0px !important;
     background-color: #34828e !important;
     border-color: #34828e !important;
+    
 }
 .socilaIconMainDiv span img{
     margin-top: 16px;
@@ -35,6 +36,7 @@
 .facebook{
     width: auto;
 }
+
 
 @media only screen and (max-width: 600px) {
     .headingJoinNewsLetter{

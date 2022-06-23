@@ -33,6 +33,8 @@
   overflow:hidden;
    height:100%;
    cursor: pointer;
+   border: 1px solid #c8dad7;
+
    
  }
 
@@ -72,6 +74,7 @@
     text-align: center;
     width: auto;
     padding: 28px;
+    
 }
 
 .main_title{
@@ -94,7 +97,10 @@
 .hthree_title{
     text-transform: uppercase;
 }
-
+.productsBg{
+    background-image: linear-gradient(#e0ecec,#e2f5f5);
+    
+}
 @media only screen and (max-width: 600px) {
     .hthree_title {
       font-size: 20px;
