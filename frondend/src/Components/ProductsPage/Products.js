@@ -14,7 +14,7 @@ const Products = () => {
 
   useEffect(() =>{
     const fetchProducts = async () => {
-      const {data} = await axios.get('http://localhost:5000/api/products')
+      const {data} = await axios.get('https://project2freeq.herokuapp.com/api/products')
       if(data){
         const products = data.filter((myItem)=>myItem.item===params.name)
       setmyProducts(products)
