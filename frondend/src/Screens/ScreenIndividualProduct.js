@@ -15,7 +15,7 @@ const ScreenIndividualProduct = () => {
     const params = useParams()
     useEffect(() =>{
         const fetchIndividualProducts = async () => {
-          const {data} = await axios.get(`api/indiVidualProduct/${params.id}`)
+          const {data} = await axios.get(`/api/indiVidualProduct/${params.id}`)
           if(data){  
             setinvidualProduct(data)
         }
