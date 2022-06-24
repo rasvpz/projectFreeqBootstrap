@@ -16,7 +16,6 @@ const ScreenIndividualProduct = () => {
     useEffect(() =>{
         const fetchIndividualProducts = async () => {
           const {data} = await axios.get(`http://localhost:5000/api/indiVidualProduct/${params.id}`)
-
           if(data){  
             setinvidualProduct(data)
         }
