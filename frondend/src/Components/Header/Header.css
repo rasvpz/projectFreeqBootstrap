@@ -92,7 +92,10 @@
   }
 
   .myFirstRow{
-    padding-left: calc(var(--bs-gutter-x) * .0) !important;    
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;   
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px; 
+
   }
 
 .newMainMenuSpan{

@@ -1,23 +1,39 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useParams } from 'react-router-dom'
-import myProducts from '../../Controller/menProducts/Products'
+import axios from "axios"
+import { Link } from 'react-router-dom'
+// import myProducts from '../../Controller/menProducts/Products'
 import {Row, Col, Card, Button} from 'react-bootstrap'
 import './Products.css'
 import Rating from './ProductsRating'
 import { BsHeart, BsPerson, BsEye } from "react-icons/bs";
 
-
 const Products = () => {
-    const params = useParams()
-    const product = myProducts.filter((myItem)=>myItem.item===params.name)
+  const params = useParams()
+  const [myProducts, setmyProducts] = useState([])
+
+  useEffect(() =>{
+    const fetchProducts = async () => {
+      const {data} = await axios.get('http://localhost:5000/api/products')
+      if(data){
+        const products = data.filter((myItem)=>myItem.item===params.name)
+      setmyProducts(products)
+    }
+    }
+    fetchProducts()
+  }, [])
+
   return (
     <>
+    
+    {myProducts.length && (
+      <>
     
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h3 className="hthree_title"><span>{product[0].mainMenu} Products</span><hr className="myHr" /></h3>            
+            <h3 className="hthree_title"><span>{myProducts[0].mainMenu} Products</span><hr className="myHr" /></h3>            
             <p className="subHeading">Keep fresh keep hot and easy handling</p>
           </div>
         </div>
@@ -25,7 +41,7 @@ const Products = () => {
     </div>
     <Row className="productsBg">
                  {
-                     product.map((filteredProducts) => (
+                     myProducts.map((filteredProducts) => (
                           <Col className="rowMarigin" sm={12} md={6}lg={4} xl={3}>                              
 
 <Card className="card">  
@@ -41,7 +57,9 @@ const Products = () => {
       <Rating value={filteredProducts.ratings}  text={`${filteredProducts.reviews} reviews `}/>
       </Card.Text>
     </div>
-    <Button style={{borderRadius:'0px', marginRight:'14px', marginBottom:'14px',  marginTop:'20px', float: 'right'}} variant="dark">Buy Now</Button>
+      <Link style={{ cursor: "pointer", textDecoration: "none"}} to={`/indiVidualProduct/${filteredProducts._id}`}>
+      <Button style={{borderRadius:'0px', marginRight:'14px', marginBottom:'14px',  marginTop:'20px', float: 'right'}} variant="dark">Buy Now</Button>
+      </Link> 
   </Card.Body>
 
   <div class="card-overlay">
@@ -62,6 +80,9 @@ const Products = () => {
 
     
     </>
+      )}
+      </>
+      
   )
 }
 

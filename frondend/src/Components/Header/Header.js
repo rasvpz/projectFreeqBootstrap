@@ -40,7 +40,7 @@ const Header = () => {
   return (
 <>
 
-<div className="row myFirstRow"  style={{ 
+<div className="row myFirstRow"  style={{ backgroundColor: "#9fe1d7",
       backgroundImage: `url("../images/banner/bgMotionBlur1.png")`, backgroundRepeat: 'no-repeat', backgroundPosition:'center'
     }}>
     	<div className="col-lg-2 col-sm-3 col-3 col-md-3 menuCol1">

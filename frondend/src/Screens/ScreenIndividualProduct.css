@@ -1,0 +1,62 @@
+.leftCol{
+    padding: 40px;
+   
+}
+.productHeading{
+
+    font-family: 'Anybody', cursive;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+}
+.buttonAddToCart{
+    border-radius: 0px !important;
+    margin-top: 16px;
+    width: 100%;
+}
+.ptoductTable{
+    border: 1px solid #b4c4c7;
+    background-image: linear-gradient(#e0ecec,#e2f5f5);
+}
+.favorate{
+    border-radius: 0px !important;  
+    width: 100%;
+    border: 1px solid rgb(206, 227, 231);
+    background: transparent !important;
+    color: rgb(22, 22, 22);
+    margin-top: 10px;
+}
+
+.productRow{
+    margin: 60px !important;
+}
+.size{
+    border: 2px solid #277dcc;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 4px;
+    background-color: #e2f3fc;
+    color: #277dcc;
+}
+.sizen2{
+    border: 1px solid #bde0f7;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 4px;
+    color: #707070;
+}
+
+@media only screen and (max-width: 600px) {
+    .productRow{
+        margin-top: 0px !important;
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+    }
+}
