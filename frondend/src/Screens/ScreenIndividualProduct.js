@@ -15,7 +15,7 @@ const ScreenIndividualProduct = () => {
     const params = useParams()
     useEffect(() =>{
         const fetchIndividualProducts = async () => {
-          const {data} = await axios.get(`/api/indiVidualProduct/${params.id}`)
+          const {data} = await axios.get(`http://localhost:5000/api/indiVidualProduct/${params.id}`)
           if(data){  
             setinvidualProduct(data)
         }
@@ -23,6 +23,13 @@ const ScreenIndividualProduct = () => {
         }
         fetchIndividualProducts()
       }, [])
+
+        let a
+        if(invidualProduct){
+            a = invidualProduct.reviews?.filter(r => r.comment!=="")
+            console.log(invidualProduct);
+            }
+
 
   return (
     <> 
@@ -32,13 +39,15 @@ const ScreenIndividualProduct = () => {
                 <table cellPadding={10} className='ptoductTable'>
                     <tr>
                         <td>
-                       <b> <Rating value={invidualProduct.ratings}  text={`${invidualProduct.reviews} reviews`}/></b>
+                            <>
+                                <b> <Rating value={invidualProduct.rating} text={`${a?.length} reviews`}/></b>                        
+                            </>                      
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <h4 className="productHeading">{invidualProduct.name}</h4>
+                            <h4 className="productHeading">{invidualProduct.productName}</h4>
                             <div className="col-lg-12 col-md-5 col-sm-12 col-xs-12 d-block d-sm-table-cell d-lg-none">
                             <img
                             className="w-100"
@@ -118,3 +127,9 @@ const ScreenIndividualProduct = () => {
 }
 
 export default ScreenIndividualProduct
+
+
+// const words = ['spray','','limit', 'elite', 'exuberant', 'destruction', 'present'];
+// const result = words.filter(word => word.length >0);
+// var size = result.length;
+// console.log(size);

@@ -2,7 +2,6 @@
 import Header from './Components/Header/Header'
 import Home from './Components/HomePage/Home'
 import Footer from './Components/Footer/Footer'
-
 import './bootstrap.min.css'
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'
 import Products from './Components/ProductsPage/Products'
