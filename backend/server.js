@@ -23,9 +23,9 @@ if (process.env.NODE_ENV === "productifon") {
     });
   }
 
-  app.get('/', (req, res)=>{
-    res.send('API is Running..')
-  })
+  // app.get('/', (req, res)=>{
+  //   res.json('API is Running..')
+  // })
 
   app.use('/api/products', productRoutes)
   app.use('/api/indiVidualProduct', productRoutes)
