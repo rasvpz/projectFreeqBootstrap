@@ -72,8 +72,7 @@
    margin-top: -8px !important;
    border-top-right-radius: 50px !important;
    margin-right: 50px !important;
-   font-size: 14px;
-  
+   font-size: 14px;  
 
   }
   
@@ -110,6 +109,11 @@
   float: right !important;
   margin-right: 40px;
   /* color: rgb(230, 230, 230); */
+  font-size: 20px;
+}
+
+.userLoginHeader{
+  font-size: 28px;
 }
 .bannerBg {
     position: relative;

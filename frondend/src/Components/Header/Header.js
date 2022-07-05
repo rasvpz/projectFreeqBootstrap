@@ -1,11 +1,14 @@
 import React, { useEffect, useState, Component } from "react";
-import {} from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux'
+import { NavDropdown } from 'react-bootstrap'
 import '../Header/Header.css'
+import { Link } from 'react-router-dom'
 import { BsFillHeartFill, BsFillPersonFill, BsCartFill, BsChevronDoubleRight } from "react-icons/bs";
 import menuBars from "../../Controller/NavBars/NavMenu";
 import Carousal from "../Carousal/BannerCarousal";
 import SideNavBar from "../SideNavBar/SideNavBar";
-
+import { LinkContainer } from 'react-router-bootstrap'
+import { logout } from '../../actions/userActions'
 const Header = () => {
   const [currentItem, setCurrentItem] = useState(menuBars[0]);
   const [currentCat, setCurrentCat] = useState({});
@@ -13,6 +16,10 @@ const Header = () => {
   const [currentSubCat, setCurrentSubCat] = useState([]);
   const [selectedSub, setSelectedSub] = useState([]);
 
+  const userLogin = useSelector((state) => state.userLogin)
+  const { userInfo } = userLogin
+
+  const dispatch = useDispatch()
   useEffect(() => {
     menuBars.map((val) => {
       if (val.name === currentItem?.name) {
@@ -37,6 +44,11 @@ const Header = () => {
     });
   }, [currentSubCat]);
 
+  const logoutHandler = () => {
+    dispatch(logout())
+  }
+
+
   return (
 <>
 
@@ -55,7 +67,23 @@ const Header = () => {
             <span className="newMainMenuSpan"> HOME</span>
             <span className="newMainMenuSpan"> ABOUT</span>
             <span className="newMainMenuSpan"> CONTACT</span>
-            <span className="icons"><BsFillHeartFill className="iconsPadding"/> <BsFillPersonFill className="iconsPadding" /> <BsCartFill className="iconsPadding" /></span>
+            <span className="icons">
+            <BsCartFill className="iconsPadding" />
+
+              {/* <BsFillHeartFill className="iconsPadding"/>  */}
+            {userInfo ? (
+                <NavDropdown title={userInfo.name} id='username'>
+                  <LinkContainer to='/profile'>
+                    <NavDropdown.Item>Profile</NavDropdown.Item>
+                  </LinkContainer>
+                  <NavDropdown.Item onClick={logoutHandler}>
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              ) : <Link to="/login"><BsFillPersonFill className="iconsPadding userLoginHeader" /></Link> }
+              
+
+              </span>
        </div> 
 
         </div>

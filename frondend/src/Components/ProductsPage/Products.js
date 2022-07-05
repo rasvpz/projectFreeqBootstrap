@@ -11,19 +11,23 @@ import { BsHeart, BsPerson, BsEye } from "react-icons/bs";
 
 const Products = () => {
   const dispatch = useDispatch()
-  const productList = useSelector(state => state.productList)
-  const { loading, error, products } =productList
+  // const {productList} = 
+  const { loading, error, products } = useSelector((state) => state.productList)
   const params = useParams()
   const [myProducts, setmyProducts] = useState([])
-
+  console.log('+++++++++++',products);
   useEffect(() =>{
      dispatch(listProducts())
   }, [dispatch]) 
 
   useEffect(() => {
-    const products = productList.products.filter((myItem)=>myItem.subCategory===params.name)
-    setmyProducts(products)
-  },[productList])
+   
+    if(products.products){ 
+    const setProducts = products.products.filter((myItem)=>myItem.subCategory===params.name)
+    setmyProducts(setProducts)
+   
+    }
+  },[products.products])
 
   return (
     <>

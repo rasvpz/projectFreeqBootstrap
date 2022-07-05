@@ -52,6 +52,17 @@
     margin: 4px;
     color: #707070;
 }
+.increment{
+    border-radius: 0px !important;  
+    width: auto;
+    border: 1px solid rgb(206, 227, 231);
+    background: transparent !important;
+    color: rgb(22, 22, 22);
+}
+.orderNumber{
+    display: flex;
+    margin-top: 8px;
+}
 
 @media only screen and (max-width: 600px) {
     .productRow{

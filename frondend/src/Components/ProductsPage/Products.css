@@ -98,8 +98,7 @@
     text-transform: uppercase;
 }
 .productsBg{
-    background-image: linear-gradient(#e0ecec,#e2f5f5);
-    
+    background-image: linear-gradient(#e0ecec,#e2f5f5);    
 }
 @media only screen and (max-width: 600px) {
     .hthree_title {

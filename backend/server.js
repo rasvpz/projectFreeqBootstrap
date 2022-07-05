@@ -2,11 +2,15 @@ import express from "express";
 import path, { dirname } from "path"
 import connectDb from "./Config/db.js"
 import Products from './Model/productsModel.js'
+import productRoutes from './routes/productRoutes.js'
+import userRoutes from './routes/userRoutes.js'
+
 
 import cors from 'cors'
 import dotenv from 'dotenv'
 const __dirname = path.resolve();
 const app = express()
+app.use(express.json())
 dotenv.config()
 connectDb()
 app.use(cors())
@@ -23,19 +27,10 @@ if (process.env.NODE_ENV === "productifon") {
     res.send('API is Running..')
   })
 
-  app.get('/api/products', async (req, res)=>{
-    try{
-      const products = await Products.find({})
-      res.json(products)
-    }catch (error){
-      console.log(error.message)
-    }    
-  })
+  app.use('/api/products', productRoutes)
+  app.use('/api/indiVidualProduct', productRoutes)
+  app.use('/api/users', userRoutes)
 
-  app.get('/api/indiVidualProduct/:id', async(req, res)=>{    
-    const indiVidualProduct = await Products.findById(req.params.id)
-    res.json(indiVidualProduct)
-  })
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => { 
