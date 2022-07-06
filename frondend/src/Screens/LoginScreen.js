@@ -17,17 +17,17 @@ const LoginScreen = ({ history }) => {
 
   const userLogin = useSelector((state) => state.userLogin)
   const { loading, error, userInfo, isAuthenticated } = userLogin
-
-//   const redirect = location.search ? location.search.split('=')[1] : '/'
-
   const location = useLocation()
+
+  const redirect = location.search ? location.search.split('=')[1] : '/'
+console.log('jdhjkdshjhsjdhgfjs', redirect);
   const navigate = useNavigate()
 
   useEffect(() => {
     if (isAuthenticated) {
-        navigate('/')
+        navigate(redirect)
     }
-  }, [navigate, userInfo, isAuthenticated])
+  }, [navigate, userInfo, isAuthenticated, redirect])
 
   const submitHandler = (e) => {
     e.preventDefault()

@@ -4,11 +4,12 @@ import Message from '../Components/Message/Message'
 import { Link } from 'react-router-dom'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import { addToCart, removeFromCart } from '../actions/cartActions'
-import { useParams, useLocation  } from 'react-router-dom'
+import { useParams, useLocation, useNavigate  } from 'react-router-dom'
 import './CartScreen.css'
 
 const ScreeCart = (history) => {
   const location = useLocation()
+  const navigate = useNavigate()
   const qty = new URLSearchParams(location.search).get('count');
 
   const params = useParams()
@@ -27,6 +28,10 @@ const ScreeCart = (history) => {
 
   const removeFromCartHandler = (id) => {
     dispatch(removeFromCart(id))
+  }
+
+  const checkoutHandler = () => {
+    navigate("/login?redirect=/shipping");
   }
 
   return (
@@ -115,7 +120,7 @@ const ScreeCart = (history) => {
               type='button'
               className='btn-block checkOutBtn'
               disabled={cartItems.length === 0}
-              // onClick={checkoutHandler}
+              onClick={checkoutHandler}
             >
               Proceed To Checkout
             </Button>

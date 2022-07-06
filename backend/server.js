@@ -4,8 +4,7 @@ import connectDb from "./Config/db.js"
 import Products from './Model/productsModel.js'
 import productRoutes from './routes/productRoutes.js'
 import userRoutes from './routes/userRoutes.js'
-
-
+import orderRoutes from './routes/orderRoutes.js'
 import cors from 'cors'
 import dotenv from 'dotenv'
 const __dirname = path.resolve();
@@ -24,6 +23,8 @@ app.use(cors())
   app.use('/api/products', productRoutes)
   app.use('/api/indiVidualProduct', productRoutes)
   app.use('/api/users', userRoutes)
+  app.use('/api/orders', orderRoutes)
+
 
   if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "./frondend/build")));
