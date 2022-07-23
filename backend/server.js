@@ -16,21 +16,26 @@ app.use(cors())
 
 
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "./frondend/build")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frondend", "build", "index.html"));
-  });
-}
+  // app.get('/', (req, res)=>{
+  //   res.json('API is Running..')
+  // })
 
   app.use('/api/products', productRoutes)
   app.use('/api/indiVidualProduct', productRoutes)
   app.use('/api/users', userRoutes)
   app.use('/api/orders', orderRoutes)
+  
+  app.get('/api/config/paypal', (req, res) =>
+  res.send(process.env.PAYPAL_CLIENT_ID)
+)
 
+  if (process.env.NODE_ENV === process.env.NODE_ENV) {
+    app.use(express.static(path.join(__dirname, "./frondend/build")));
 
-
+    app.get("*", (req, res) => {
+      res.sendFile(path.resolve(__dirname, "frondend", "build", "index.html"));
+    });
+  }
   
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => { 

@@ -20,7 +20,6 @@ const LoginScreen = ({ history }) => {
   const location = useLocation()
 
   const redirect = location.search ? location.search.split('=')[1] : '/'
-console.log('jdhjkdshjhsjdhgfjs', redirect);
   const navigate = useNavigate()
 
   useEffect(() => {

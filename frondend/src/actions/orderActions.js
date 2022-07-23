@@ -20,6 +20,7 @@ import {
   ORDER_DELIVER_SUCCESS,
   ORDER_DELIVER_REQUEST,
 } from '../Constants/orderConstants'
+
 import { logout } from './userActions'
 
 export const createOrder = (order) => async (dispatch, getState) => {
@@ -38,7 +39,6 @@ export const createOrder = (order) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     }
-
     const { data } = await axios.post(`http://localhost:5000/api/orders`, order, config)
 
     dispatch({

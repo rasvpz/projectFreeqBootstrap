@@ -22,6 +22,7 @@ import {
     ORDER_DELIVER_RESET,
     ORDER_CREATE_RESET,
   } from '../Constants/orderConstants'
+
   
   export const orderCreateReducer = (state = {}, action) => {
     switch (action.type) {
@@ -31,6 +32,7 @@ import {
         }
       case ORDER_CREATE_SUCCESS:
         return {
+          ...state,
           loading: false,
           success: true,
           order: action.payload,

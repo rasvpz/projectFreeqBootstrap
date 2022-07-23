@@ -41,10 +41,10 @@ const addOrderItems = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/:id
 // @access  Private
 const getOrderById = asyncHandler(async (req, res) => {
-  const order = await Order.findById(req.params.id).populate(
-    'user',
-    'name email'
-  )
+  console.log(req.params.id)
+  const order=await Order.findById(req.params.id).populate('user','name email')
+  console.log(order)
+
 
   if (order) {
     res.json(order)
@@ -102,7 +102,7 @@ const updateOrderToDelivered = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/myorders
 // @access  Private
 const getMyOrders = asyncHandler(async (req, res) => {
-  const orders = await Order.find({ user: req.user._id })
+    const orders = await Order.find({ user: req.user._id })
   res.json(orders)
 })
 

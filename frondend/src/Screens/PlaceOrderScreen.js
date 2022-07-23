@@ -96,7 +96,7 @@ const navigate = useNavigate()
                       <Row>
                         <Col md={1}>
                           <Image
-                            src={item.image}
+                            src={ '../../images/product/inspired-product/'+(item.image) } 
                             alt={item.name}
                             fluid
                             rounded

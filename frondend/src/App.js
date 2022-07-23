@@ -13,7 +13,9 @@ import ProfileScreen from './Screens/ProfileScreen'
 import ShippingScreen from './Screens/ShippingScreen'
 import PaymentScreen from './Screens/PaymentScreen'
 import PlaceOrderScreen from './Screens/PlaceOrderScreen'
-
+import OrderScreen from './Screens/OrderScreen'
+import UserListScreen from './Screens/UserListScreen'
+import UserEditScreen from './Screens/UserEditScreen'
 
 const  App = () => {
   return (
@@ -22,6 +24,7 @@ const  App = () => {
       <main>
       <Routes>
         <Route  path = '/' element={<Home/>} />
+        <Route  path = '/order/:id' element={<OrderScreen />} />
         <Route  path = '/placeorder' element={<PlaceOrderScreen />} />
         <Route  path = '/payment' element={<PaymentScreen />} />
         <Route  path = '/login' element={<LoginScreen />} />
@@ -31,7 +34,8 @@ const  App = () => {
         <Route  path = '/products/:name' element={<Products />} />
         <Route  path = '/indiVidualProduct/:id' element={<IndividualProducts />} />
         <Route  path = '/cart/:id' element={<CartPage />} />
-
+        <Route  path = '/admin/userlist' element={<UserListScreen />} />
+        <Route  path = '/admin/user/:id/edit' element={<UserEditScreen />} />
 
         </Routes>
       </main>
@@ -42,3 +46,6 @@ const  App = () => {
 }
 
 export default App;
+
+
+// https://material-table.com/#/docs/get-started
