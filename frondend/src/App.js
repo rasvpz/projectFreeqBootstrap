@@ -16,6 +16,8 @@ import PlaceOrderScreen from './Screens/PlaceOrderScreen'
 import OrderScreen from './Screens/OrderScreen'
 import UserListScreen from './Screens/UserListScreen'
 import UserEditScreen from './Screens/UserEditScreen'
+import ProductListScreen from './Screens/ProductListScreen'
+
 
 const  App = () => {
   return (
@@ -35,6 +37,7 @@ const  App = () => {
         <Route  path = '/indiVidualProduct/:id' element={<IndividualProducts />} />
         <Route  path = '/cart/:id' element={<CartPage />} />
         <Route  path = '/admin/userlist' element={<UserListScreen />} />
+        <Route  path = '/admin/productlist' element={<ProductListScreen />} />
         <Route  path = '/admin/user/:id/edit' element={<UserEditScreen />} />
 
         </Routes>
@@ -49,3 +52,63 @@ export default App;
 
 
 // https://material-table.com/#/docs/get-started
+
+// {
+//   "user": {
+//     "$oid": "62c2953d375ec808c98062ed"
+//   },
+//   "mainCategory": "Aluminium",
+//   "subCategory": "Normal Container",
+//   "productName": "LoremIpsum",
+//   "thumbNailPic": "i1.jpg",
+//   "picBig": "1.png",
+//   "color": [
+//     "Gold",
+//     "Silver"
+//   ],
+//   "size": [
+//     "M",
+//     "L"
+//   ],
+//   "rate": 1500,
+//   "description": "Aluminium Container with lorem ipsun dolar sota sinta coral motomiyem wrtel poliv mintas",
+//   "countInStock": 20,
+//   "rating": {
+//     "$binary": {
+//       "base64": "Mg==",
+//       "subType": "00"
+//     }
+//   },
+//   "reviews": [
+//     {
+//       "name": "name",
+//       "rating": 10,
+//       "comment": "Description",
+//       "_id": {
+//         "$oid": "62b749127b800aecc87a03c5"
+//       }
+//     },
+//     {
+//       "name": "name 2",
+//       "rating": 10,
+//       "comment": "Description",
+//       "_id": {
+//         "$oid": "62b749127b800aecc87a03c6"
+//       }
+//     }
+//   ],
+//   "newProducts": "no",
+//   "inspiredProducts": "yes",
+//   "latestProducts": 6,
+//   "__v": 0,
+//   "createdAt": {
+//     "$date": {
+//       "$numberLong": "1656178962278"
+//     }
+//   },
+//   "updatedAt": {
+//     "$date": {
+//       "$numberLong": "1656178962278"
+//     }
+//   }
+// }
