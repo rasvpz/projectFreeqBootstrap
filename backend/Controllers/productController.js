@@ -42,7 +42,7 @@ const createProduct = asyncHandler(async (req, res) => {
   const product = new Products({
 
       user: req.user._id,
-      _id:'62deb87d2b60539cd15ras2d',
+      // _id:'62c2953d375ec808c98062ed',
       mainCategory: 'Aluminium',
       subCategory: 'Normal Container',
       productName:'LoremIpsum',
@@ -62,7 +62,7 @@ const createProduct = asyncHandler(async (req, res) => {
       {
         name: "name",
         rating: 10,
-        comment: ''
+        comment: 'This is a test command'
       },
       {
         name: "name",
